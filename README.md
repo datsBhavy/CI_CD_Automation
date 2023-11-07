@@ -1,7 +1,7 @@
 # CI_CD_Automation
 # Features
 List the key features of your CI/CD automation project. For example:
-1. Automated build and deployment
+1. Automated build and deployment using GitHub actions
 2. Continuous integration with version control
 3. Automated testing
 4. Environment provisioning

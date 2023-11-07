@@ -1,0 +1,34 @@
+name: backend-main-workflow
+
+on:
+  pull_request:
+    types: [closed]
+    paths:
+      - "backend/**"
+      - ".github/workflows/backend.main.yml"
+      - ".aws/backend_production.json"
+    branches:
+      - main
+  push:
+    paths:
+      - "backend/**"
+      - ".github/workflows/backend.main.yml"
+      - ".aws/backend_production.json"
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build_deploy_docker:
+    uses: ./.github/workflows/build-push-deploy.yml
+    with:
+      appdir: backend
+      appname: backend
+      environment: production
+      region: us-east-1
+    secrets:
+      accesskey: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      accesssecret: ${{ secrets.AWS_ACCESS_KEY_SECRET }}

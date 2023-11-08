@@ -6,7 +6,11 @@ The Github workflows take care of push the image to ECR repository and thereafte
 The Workflow files can be found in `.github/workflows` 
 
 ## Plugins: 
-[ECR Login](https://github.com/aws-actions/amazon-ecr-login)https://github.com/aws-actions/amazon-ecr-login
-[Push image to ECR](https://github.com/marketplace/actions/push-to-amazon-ecr)https://github.com/marketplace/actions/push-to-amazon-ecr
-[Docker setup](https://github.com/docker/setup-buildx-action)https://github.com/docker/setup-buildx-action
-[Deploy task definition](https://github.com/aws-actions/amazon-ecs-deploy-task-definition)https://github.com/aws-actions/amazon-ecs-deploy-task-definition
+[ECR Login](https://github.com/aws-actions/amazon-ecr-login)https://github.com/aws-actions/amazon-ecr-login)
+
+[Push image to ECR](https://github.com/marketplace/actions/push-to-amazon-ecr)https://github.com/marketplace/actions/push-to-amazon-ecr)
+
+[Docker setup](https://github.com/docker/setup-buildx-action)https://github.com/docker/setup-buildx-action)
+
+[Deploy task definition](https://github.com/aws-actions/amazon-ecs-deploy-task-definition)https://github.com/aws-actions/amazon-ecs-deploy-task-definition)
+

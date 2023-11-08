@@ -1,20 +1,12 @@
-# CI_CD_Automation
-# Features
-List the key features of your CI/CD automation project. For example:
-1. Automated build and deployment using GitHub actions
-2. Continuous integration with version control
-3. Automated testing
-4. Environment provisioning
+# Monorepo-ci-cd
+This repository is a mono repo containing two backend NodeJS based projects. The project uses github workflows to automate deployment to AWS ECS based infrastructure. 
+The Github workflows take care of push the image to ECR repository and thereafter update the task definition, deploy new task definition to ECS. 
 
-# Usage
-Explain how to use your CI/CD automation. Describe the typical workflow, including how to trigger builds or deployments. For example:
-- Push code to your version control system to trigger automatic builds.
-- Create feature branches and submit pull requests for integration and testing.
-- Monitor the CI/CD pipeline for status and logs.
+## Workflow Files
+The Workflow files can be found in `.github/workflows` 
 
-# Configuration
-Explain how to configure and customize your CI/CD pipeline, including:
-- Environment variables
-- Secrets
-- Pipeline scripts
-- Provide examples and sample configurations to help users set up their own customizations.
+## Plugins: 
+[ECR Login](https://github.com/aws-actions/amazon-ecr-login)https://github.com/aws-actions/amazon-ecr-login
+[Push image to ECR](https://github.com/marketplace/actions/push-to-amazon-ecr)https://github.com/marketplace/actions/push-to-amazon-ecr
+[Docker setup](https://github.com/docker/setup-buildx-action)https://github.com/docker/setup-buildx-action
+[Deploy task definition](https://github.com/aws-actions/amazon-ecs-deploy-task-definition)https://github.com/aws-actions/amazon-ecs-deploy-task-definition
